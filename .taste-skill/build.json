@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/parcelnacre",
+ "kind": "software",
+ "start": "2026-11-25T08:06:29.135Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "parcel exception management for couriers",
+ "primary": "Book a demo"
+}

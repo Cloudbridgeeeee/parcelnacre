@@ -1,0 +1,175 @@
+{
+  "name": "ParcelNacre",
+  "primary": "Book a demo",
+  "accent": "#1f6b3a",
+  "ink": "#0a0a0a",
+  "bg": "#f8f8f8",
+  "surface": "#eeeeee",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400..500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Onest\", system-ui, sans-serif",
+  "fontText": "\"Onest\", system-ui, sans-serif",
+  "client": "Mainland Express",
+  "note": "Fixed delivery reports. Classifications here come from fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Exceptions",
+    "records": "Shipments",
+    "queue": "Suggested fixes"
+  },
+  "overview": {
+    "title": "Failed deliveries, last 30 days",
+    "kpis": [
+      [
+        "Parcels",
+        "18,420"
+      ],
+      [
+        "Failed deliveries",
+        "1,284"
+      ],
+      [
+        "Failure rate",
+        "7%"
+      ],
+      [
+        "Recurring causes",
+        "5"
+      ]
+    ],
+    "chart": {
+      "title": "Failure rate per zone, %",
+      "labels": [
+        "IK",
+        "SU",
+        "YA",
+        "LE",
+        "AP",
+        "MA"
+      ],
+      "values": [
+        9,
+        7,
+        5,
+        6,
+        4,
+        8
+      ],
+      "threshold": 7,
+      "thresholdLabel": "Target 7%",
+      "caption": "Zones above the line get a weekly cause review."
+    }
+  },
+  "records": {
+    "title": "Failed shipments",
+    "searchHint": "Parcel or zone",
+    "statusCol": 3,
+    "columns": [
+      "Parcel",
+      "Zone",
+      "Exception",
+      "Status",
+      "Attempt",
+      "Date"
+    ],
+    "tones": {
+      "Open": "warn",
+      "Returned": "bad",
+      "Resolved": "good"
+    },
+    "rows": [
+      [
+        "ME-48213",
+        "Ikeja",
+        "Address not found",
+        "Open",
+        "2",
+        "1 Dec"
+      ],
+      [
+        "ME-48190",
+        "Surulere",
+        "Customer not home",
+        "Open",
+        "1",
+        "1 Dec"
+      ],
+      [
+        "ME-48177",
+        "Yaba",
+        "Refused at door",
+        "Returned",
+        "1",
+        "1 Dec"
+      ],
+      [
+        "ME-48150",
+        "Ikeja",
+        "Address not found",
+        "Open",
+        "1",
+        "30 Nov"
+      ],
+      [
+        "ME-48122",
+        "Lekki",
+        "Gate closed",
+        "Open",
+        "2",
+        "30 Nov"
+      ],
+      [
+        "ME-48098",
+        "Hub",
+        "Damaged in transit",
+        "Resolved",
+        "1",
+        "29 Nov"
+      ],
+      [
+        "ME-48071",
+        "Surulere",
+        "Customer not home",
+        "Resolved",
+        "2",
+        "29 Nov"
+      ],
+      [
+        "ME-48040",
+        "Ikeja",
+        "Address not found",
+        "Resolved",
+        "3",
+        "28 Nov"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Suggested fixes to review",
+    "lead": "Each fix cites the reports behind it. Nothing changes until your team approves it.",
+    "items": [
+      {
+        "id": "landmark",
+        "title": "Ask for a landmark at checkout",
+        "detail": "Ikeja merchants.",
+        "reason": "62% of Ikeja failures are address not found."
+      },
+      {
+        "id": "window",
+        "title": "Send a delivery window by SMS",
+        "detail": "Surulere zone.",
+        "reason": "Customer not home caused 29% of failures."
+      },
+      {
+        "id": "gate",
+        "title": "Schedule Lekki estates before 17:00",
+        "detail": "Lekki zone.",
+        "reason": "Gate closed failures cluster after 17:00."
+      },
+      {
+        "id": "pack",
+        "title": "Check packaging at the hub",
+        "detail": "Fragile items.",
+        "reason": "14 parcels damaged in transit this month."
+      }
+    ]
+  }
+}
